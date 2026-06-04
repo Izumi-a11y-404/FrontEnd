@@ -1,0 +1,124 @@
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.footer-left-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 20px 40px; 
+}
+
+.ngo {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.logo-section {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.NGO-logo {
+  width: 100%;
+}
+
+.ngo-name-section {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.ngo-tag {
+  display: flex;
+  padding-left: 80px;
+}
+
+.ngo-tag-line {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  padding: 8px 32px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.contact-section {
+  padding-left: 81px;
+}
+
+.contact-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  padding-left: 1px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer-right-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.link-icons {
+  width: 60px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.icons {
+  width: 100%;
+}
+
+.specific-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .ngo,
+  .ngo-tag {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-text {
+    padding-left: 40px;
+  }
+
+  .contact-section {
+    padding-left: 20px;
+  }
+}

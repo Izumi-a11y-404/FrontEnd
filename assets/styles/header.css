@@ -1,0 +1,119 @@
+.header {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(218, 224, 228);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-left-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 350px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.main-ngo-logo {
+  width: 60px;
+  margin-top: 4px;
+}
+
+.main-logo {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  
+
+  .header-left-section {
+    width: auto;
+  }
+
+  .navigation {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    width: auto;
+    gap: 15px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+}
+
+.name-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.name {
+  font-size: 35px;
+  font-family: "Allura";
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: rgb(240, 12, 12);
+}
+
+.home-option,
+.about-option,
+.contact-option {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.15s, color 0.15s, border-radius 0.15s, padding 0.15s;
+  cursor: pointer;
+}
+
+.home-option:hover,
+.about-option:hover,
+.contact-option:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
