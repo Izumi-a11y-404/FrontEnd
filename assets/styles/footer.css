@@ -121,4 +121,11 @@
   .contact-section {
     padding-left: 20px;
   }
+
+  .footer-left-section,
+  .footer-right-section {
+    padding: 20px;
+  }
 }
+
+

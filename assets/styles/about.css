@@ -3,8 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 650px;
-  height: auto;
+  height: 650px;
 }
 
 .learn-more-section {
@@ -12,6 +11,7 @@
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: -10px;
+  padding: 12px 0px;
 }
 
 .learn-more-button {
@@ -42,8 +42,10 @@
 }
 
 .learn-more-button:active {
-  margin-left: 1px;
+  margin-left: 2px;
   margin-top: 2px;
+  margin-right: -2px;
+  margin-bottom: -2px;
   box-shadow:none;
   opacity: 0.5;
 }
@@ -79,7 +81,6 @@
   justify-content: center;
   align-items: center;
   padding: 40px 40px;
-  margin-right: 10px;
 }
 
 .about-image {
@@ -92,6 +93,25 @@
   border-radius: 10px;
   flex-shrink: 0;
   transition: margin 0.15s, box-shadow 0.15s;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    height: auto;
+  }
+
+  .about-info-container {
+    place-items: center;
+  }
+
+  .about-left-section,
+  .about-right-section {
+    padding: 20px;
+  }
+
+  .learn-more-section {
+    padding-left: 40px;
+  }
 }
 
 .about-image:hover {

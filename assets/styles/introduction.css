@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .left-section {
@@ -14,8 +16,8 @@
 }
 .right-section {
   display: flex;
-  flex-direction: row;
-  margin-right: -20px;
+  align-items: center;
+  gap: 8px;
 }
 
 .intro {
@@ -82,18 +84,8 @@
 
 .image-section-1 {
   display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 350px;
-}
-
-.first-image {
-  width: 80%;
-  border-radius: 10px;
-  transition: margin 0.2s;
+  flex: 1.3;
+  padding: 20px;
 }
 
 .first-image:hover {
@@ -107,14 +99,22 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 10px 0px;
+  gap: 20px;
+}
+
+.first-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: margin 0.2s;
+  border-radius: 12px;
 }
 
 .image-1,
 .image-2 {
   width: 100%;
   max-width: 200px;
+  border-radius: 12px;
 }
 
 img {
@@ -125,11 +125,15 @@ img {
 .image-1 {
   flex: 1;
   margin-bottom: 40px;
+  border-radius: 12px;
 }
 
-.second-image {
+.second-image,
+.third-image {
   width: 100%;
-  border-radius: 10px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
   transition: margin 0.2s;
 }
 
@@ -143,6 +147,7 @@ img {
 .image-2 {
   flex: 1;
   width: 200px;
+  border-radius: 12px;
 }
 
 .third-image {
@@ -164,13 +169,6 @@ img {
     text-align: center;
   }
 
-  .right-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
-  }
-
   .intro {
     font-size: 40px;
     line-height: 50px;
@@ -179,13 +177,34 @@ img {
 }
 
 @media (max-width: 768px) {
+  .right-section {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 8px;
+  }
+
   .image-section-1 {
-    width: 250px;
+    padding-left: 15px;
+  }
+
+  .first-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 0px;
+  }
+
+  .second-image,
+  .third-image {
+    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .image-1,
   .image-2 {
-    width: 150px;
-    margin-left: 30px;
+    width: 85%;
+    border-radius: 12px;
   }
 }
