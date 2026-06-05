@@ -20,7 +20,7 @@ A responsive website created as part of the internship selection process for She
 
 ## How to Run
 
-Open `main.html` in any modern web browser.
+Open `index.html` in any modern web browser.
 
 ## Author
 
