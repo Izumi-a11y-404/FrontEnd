@@ -81,9 +81,8 @@
 }
 
 .name {
-  font-size: 35px;
-  font-family: "Allura";
-  font-weight: 400;
+  font-size: 30px;
+  font-family: Courgette, Satisfy;
   text-align: center;
   cursor: pointer;
 }
