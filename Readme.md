@@ -20,7 +20,9 @@ A responsive website created as part of the internship selection process for She
 
 ## How to Run
 
-Open `index.html` in any modern web browser.
+1. Clone or download this repository.
+2. Open the project folder on your computer.
+3. Double-click `index.html` or open it in any modern web browser.
 
 ## Author
 
